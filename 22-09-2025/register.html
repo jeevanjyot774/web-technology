@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login Page</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: lightgray;
+      padding: 20px;
+    }
+    .cv-box {
+      background: white;
+      padding: 20px;
+      border: 1px solid white;
+      max-width: 350px;
+      margin: 60px auto;
+    }
+    h2 {
+      text-align: center;
+      color: darkgreen;
+    }
+    label {
+      margin-top: 10px;
+      display: block;
+      color: darkgreen;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+      margin-bottom: 10px;
+      border: 1px solid gray;
+      border-radius: 4px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background: black;
+      color: white;
+      border-radius: 4px;
+      margin-top: 10px;
+    }
+    .small-text {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="cv-box">
+    <h2>Register</h2>
+    <form>
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+      <label for="password">Set Password</label>
+      <input type="password" id="password" name="password" required>
+      <button type="submit">Sign Up</button>
+      <div class="small-text">
+        <a href="login.html">Click Here to Log In</a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
