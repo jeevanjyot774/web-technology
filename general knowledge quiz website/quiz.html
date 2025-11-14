@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Questions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1> Quiz Questions</h1>
+            <div class="progress">
+                Question <span id="current">1</span> of 10
+            </div>
+        </header>
+        
+        <main class="quiz-content">
+            <div class="question-card">
+                <h2 id="question">What is the capital of France?</h2>
+                
+                <div class="options">
+                    <button class="option-btn" onclick="selectOption(this)">A. London</button>
+                    <button class="option-btn" onclick="selectOption(this)">B. Berlin</button>
+                    <button class="option-btn" onclick="selectOption(this)">C. Paris</button>
+                    <button class="option-btn" onclick="selectOption(this)">D. Madrid</button>
+                </div>
+                
+                <div class="navigation">
+                    <button class="nav-btn" onclick="previousQuestion()" id="prev-btn">Previous</button>
+                    <button class="nav-btn" onclick="nextQuestion()" id="next-btn">Next Question</button>
+                    <a href="results.html" class="nav-btn submit-btn" id="submit-btn">See Results</a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
