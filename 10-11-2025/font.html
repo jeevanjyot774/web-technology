@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="textContainer"></div>
+    <script>
+        let textContainer=document.getElementById('textContainer');
+        let size=16;
+        let increasing=true;
+        function fontChange(){
+            if(increasing){
+                size+=5;
+            textContainer.innerText = "Increasing";
+            if(size>=200){
+                increasing=false;
+            }
+            }else{
+                size-=5;
+                textContainer.innerText = "Decreasing";
+                if(size<=16){
+                    increasing=true;
+                }
+            }
+            textContainer.style.fontSize=size+"px";
+        }
+        fontChange();
+        setInterval(fontChange,100);
+    </script>
+</body>
+</html>
