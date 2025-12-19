@@ -7,12 +7,12 @@
 
 body {
     font-family: Arial, sans-serif;
- background-color: darkslateblue;
+    background-color: darkslateblue;
     padding: 20px;
     min-height: 100vh;
     display: flex;
     align-items: center;  
-    justify-content: center; 
+    justify-content: center;
 }
 
 .container {
@@ -20,7 +20,7 @@ body {
     width: 100%;         
     margin: 20px;         
     background-color: white;
-    padding: 30px;
+    padding: 20px;
     border-radius: 8px;
 }
 
@@ -55,7 +55,7 @@ header h1 {
     display: flex;
     justify-content: space-around;
     margin: 20px 0;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .info-item {
@@ -66,20 +66,19 @@ header h1 {
 }
 
 .info-item span:first-child {
-    font-size: 32px;
+    font-size: 24px;
     display: block;
     margin-bottom: 5px;
 }
 
 .info-item span:last-child {
-    font-size: 30px;
+    font-size: 20px;
     font-style: italic;
     color: black;
 }
 
 .start-btn {
-    display: block;
-    width: 150px;
+    display: inline-block;
     margin: 20px auto;
     padding: 12px 20px;
     background-color: #27ae60;
@@ -149,8 +148,7 @@ header h1 {
     color: #666;
 }
 .back-btn {
-    display: block;
-    width: 150px;
+    display: inline-block;
     margin: 20px auto;
     padding: 12px 20px;
     background-color: #34495e;
@@ -255,7 +253,7 @@ header h1 {
 
 .score-card {
     background-color: #ecf0f1;
-    padding: 30px;
+    padding: 20px;
     border-radius: 8px;
     border: 2px solid #3498db;
     margin-bottom: 20px;
@@ -293,8 +291,9 @@ header h1 {
     flex-wrap: wrap;
 }
 
-.action-btn {
-    padding: 10px 20px;
+.action-btn-retry,
+.action-btn-home {
+    padding: 12px 20px;
     text-decoration: none;
     border-radius: 5px;
     font-size: 16px;
@@ -306,20 +305,59 @@ header h1 {
     text-align: center;
 }
 
-.retry {
+.action-btn-retry {
     background-color: #3498db;
 }
 
-.retry:hover {
+.action-btn-retry:hover {
     background-color: #2980b9;
 }
 
-.home {
+.action-btn-home {
     background-color: #34495e;
 }
 
-.home:hover {
+.action-btn-home:hover {
     background-color: #2c3e50;
+}
+.save-box {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ecf0f1;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.save-box h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+.save-box input {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 12px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.save-box button {
+    padding: 10px 24px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.save-box button:hover {
+    background-color: #2980b9;
 }
 
 

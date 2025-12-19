@@ -14,13 +14,15 @@
         function fontChange(){
             if(increasing){
                 size+=5;
-            textContainer.innerText = "Increasing";
-            if(size>=200){
+            textContainer.innerText = "TEXT-GROWING";
+            textContainer.style.color="red";
+            if(size>=50){
                 increasing=false;
             }
             }else{
                 size-=5;
-                textContainer.innerText = "Decreasing";
+                textContainer.innerText = "TEXT-SHRINKING";
+                textContainer.style.color="blue";
                 if(size<=16){
                     increasing=true;
                 }
